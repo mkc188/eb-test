@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mkc188/eb-test/issues"
   },
-  "homepage": "https://github.com/mkc188/eb-test"
+  "homepage": "https://github.com/mkc188/eb-test",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
 }
