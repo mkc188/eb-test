@@ -3,7 +3,6 @@ var app = express()
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
-  res.send(app.get('env'));
 })
 
 var server = app.listen(process.env.PORT || 3000, function () {
@@ -12,5 +11,6 @@ var server = app.listen(process.env.PORT || 3000, function () {
   var port = server.address().port
 
   console.log('Example app listening at http://%s:%s', host, port)
+  console.log(app.get('env'));
 
 })
